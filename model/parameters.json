@@ -1,0 +1,51 @@
+{
+    "preprocess": {
+        "parameters": {
+            "year": 2022,
+            "week": 34,
+            "channel_name": "channel_a",
+            "branch_name": [
+                "branch_a"
+            ],
+            "route": [
+                "0500",
+                "0515",
+                "0528"
+            ],
+            "products": "all",
+            "customers": "all",
+            "id_cols": [
+                "Branch",
+                "Route",
+                "Customer",
+                "Product"
+            ],
+            "ds_col": "Date",
+            "y_col": "Units_Sold",
+            "freq": "W-THU",
+            "recently_added_threshold": 3,
+            "benchmark": 4,
+            "ceased_to_exist_threshold": 16,
+            "benchmark_threshold": 7
+        }
+    },
+    "training": {
+        "parameters": {
+            "n_pred": 1,
+            "weights": [
+                0,
+                0.2,
+                0.5,
+                0.7,
+                1
+            ],
+            "pct_sales": [
+                0.2
+            ],
+            "validation_window": 4,
+            "tendency_window": 52,
+            "prediction_importance": 0.7,
+            "sales_increase_importance": 0.3
+        }
+    }
+}

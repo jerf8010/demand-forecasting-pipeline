@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.ipynb_checkpoints/
+.DS_Store
+# data and model artifacts never go in the repo
+*.parquet
+*.csv
+*.xlsx
+*.pkl
+outputs/
+.env

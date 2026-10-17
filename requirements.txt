@@ -1,0 +1,9 @@
+# Core forecasting stack (versions known to work together with the code in model/)
+u8darts==0.20.0
+pandas<2
+numpy<1.24
+scikit-learn
+joblib
+matplotlib
+pyarrow
+pytest
